@@ -13,8 +13,8 @@ export class AnswerserviceService {
 
   constructor() { }
   
-  getAnswer() {
-	  this.answer = Answers[Math.floor(Math.random(20))];
+  getAnswer(): Answer {
+	  this.answer = Answers[Math.floor(Math.random() * 20)];
 	  return this.answer;
   }	  
 }
